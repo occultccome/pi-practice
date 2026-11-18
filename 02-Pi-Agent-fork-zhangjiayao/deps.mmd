@@ -1,0 +1,21 @@
+```mermaid
+graph LR
+  chord --> pi-schema
+  chord --> pi-telemetry
+  pi-ai --> pi-schema
+  pi-ai --> pi-telemetry
+  pi-agent-core --> pi-ai
+  pi-agent-core --> pi-schema
+  pi-durable --> chord
+  pi-durable --> pi-ai
+  pi-durable --> pi-codemode
+  pi-durable --> pi-schema
+  pi-durable --> pi-telemetry
+  pi-env --> chord
+  pi-env --> pi-durable
+  pi-coding-agent --> pi-agent-core
+  pi-coding-agent --> pi-ai
+  pi-coding-agent --> pi-codemode
+  pi-coding-agent --> pi-mcp
+  pi-coding-agent --> pi-tui
+```
